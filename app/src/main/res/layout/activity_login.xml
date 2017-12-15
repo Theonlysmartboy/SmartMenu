@@ -8,7 +8,7 @@
     android:paddingLeft="18dp"
     android:paddingRight="18dp"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.otemainc.smartmenu.LoginActivity"
+    tools:context="com.otemainc.smartmenu.activity.LoginActivity"
     android:background="@drawable/restaurant">
     <!-- Login progress -->
     <ProgressBar
