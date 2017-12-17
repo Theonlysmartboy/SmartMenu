@@ -161,13 +161,14 @@ public class LoginActivity extends Activity{
                         String uid = jObj.getString("uid");
 
                         JSONObject user = jObj.getJSONObject("user");
-                        String name = user.getString("name");
+                        String Full_name = user.getString("Full_name");
                         String email = user.getString("email");
+                        String JobTitle = user.getString("JobTitle");
                         String created_at = user
                                 .getString("created_at");
 
                         // Inserting row in users table
-                        db.addUser(name, email, uid, created_at);
+                        db.addUser(Full_name, email, JobTitle, uid, created_at);
 
                         // Launch main activity
                         Intent intent = new Intent(LoginActivity.this,
